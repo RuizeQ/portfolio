@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Riza Qin</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com/ruizeq" target="_blank" rel="noopener 
+      noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/riza-qin-99990a28a/" target="_blank" rel="noopener 
+      noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+      <a href="mailto:riza2022sz@outlook.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Riza 👋</h2>
+        <p>I am a first-year Mathematics student at the University of Waterloo with a passion for software development,
+          data science, and finance.</p>
+          <p>I enjoy working on both front-end and back-end projects,
+          and I'm interested in applying statistical analysis, modeling, and case-driven insights to solve real problems.</p>
+          <p>Outside of academics and tech, I'm also an active curling player!</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/image1.jpg" alt="riza qin headshot">
+      </div>
+
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I have proficiency across the full stack, from front-end technologies to a variety of back-end programming languages!</div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/js-logo.jpg" alt="js logo">
+          <span>JAVASCRIPT</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/java-logo.webp" alt="java logo">
+          <span>JAVA</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/python-logo.png" alt="python logo">
+          <span>PYTHON</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/c-logo.png" alt="c logo">
+          <span>C</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/racket-logo.png" alt="racket logo">
+          <span>RACKET</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="contact-container">
+        <div class="contact-text">
+          <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to say hi —
+            feel free to reach out using the form here.</p>
+
+          <div class="contact-details">
+            <p><i class="fa-solid fa-envelope"></i> riza2022sz@outlook.com</p>
+            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/riza-qin-99990a28a/"
+                target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xkgplqne" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
